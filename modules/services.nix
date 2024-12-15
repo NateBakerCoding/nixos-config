@@ -1,0 +1,14 @@
+{ configs, pkgs, ...}:
+
+
+{
+    
+    services.ollama = {
+        enable = true;
+        acceleration = "cuda";
+    };
+
+
+}
+
+
