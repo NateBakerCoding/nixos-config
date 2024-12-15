@@ -14,8 +14,8 @@ Welcome to my NixOS configuration repository! This setup is designed for a fully
 │   │   ├── kitty-config.nix    # Kitty terminal emulator settings
 │   │   └── nvim-config.nix     # Neovim text editor settings
 │   └── home.nix                # Main Home Manager configuration
-├── hosts/                      # Machine-specific configurations
-│   └── bakerdev.nix            # Configuration for the `bakerdev` host
+├── hosts/                      # Not in use atm but possible in future
+│   └── bakerdev.nix            # Not in use atm but possible in future
 ├── modules/                    # Modular system configurations
 │   ├── audio.nix               # Audio settings and optimizations
 │   ├── desktop.nix             # General desktop environment settings
