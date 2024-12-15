@@ -49,7 +49,7 @@ Ensure you have NixOS installed with Flakes enabled. If you're new to NixOS, che
    sudo nixos-rebuild switch --flake .
    ```
 
-3. For user-specific configurations managed by Home Manager: (make sure to use your username and change it in the home-manager/home.nix file)
+3. For user-specific configurations managed by Home Manager: (make sure to use your username and change it in the config)
    ```bash
    home-manager switch --flake .#<username-here>  
    ```
