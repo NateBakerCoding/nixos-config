@@ -27,10 +27,12 @@
           ./modules/audio.nix
           ./modules/nvidia.nix
           ./modules/desktop.nix
-          #./modules/services.nix
+          ./modules/services.nix
           ./modules/packages.nix
           ./modules/gnome.nix
           ./modules/nix-settings.nix
+          ./modules/wine.nix
+
           # Integrate Home Manager
           home-manager.nixosModules.home-manager
           # Ensure home-manager command is globally available

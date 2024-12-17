@@ -22,6 +22,9 @@
     ollama-cuda
     tidal-hifi
     xclip
+    scanmem
+    lutris
+    unrar
   ];
 
   # Allow unfree packages
