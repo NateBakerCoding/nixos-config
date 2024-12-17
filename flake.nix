@@ -32,6 +32,7 @@
           ./modules/gnome.nix
           ./modules/nix-settings.nix
           ./modules/wine.nix
+          ./modules/nordvpn.nix
 
           # Integrate Home Manager
           home-manager.nixosModules.home-manager
