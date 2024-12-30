@@ -1,17 +1,17 @@
 { config, pkgs, ... }:
 
 {
-  boot.loader.grub = {
-    enable = true;
-    version = 2;  # Specify GRUB2 explicitly
-    devices = [ "/dev/nvme0n1" ];  # Use your boot device
-    efiSupport = true;             # Enable for UEFI systems
-    efiInstallAsRemovable = false; # Set to true for some dual-boot scenarios
-    extraConfig = ''
-      # Add any GRUB2-specific configurations here
-    '';
-  };
+  # GRUB in UEFI mode
+  boot.loader.grub.enable = true;
+  boot.loader.grub.efiSupport = true;
 
-  # Ensure other bootloaders are disabled
-  boot.loader.systemd-boot.enable = false;
+  # In UEFI mode, do *not* specify /dev/nvme0n1
+  boot.loader.grub.devices = [ "nodev" ];
+
+  # (Optional) Usually for multiple OS detection
+  boot.loader.grub.useOSProber = true;
+
+  # The EFI mount point is set in the *EFI* config, not in GRUB:
+  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.efi.efiSysMountPoint = "/boot"; 
 }
