@@ -1,17 +1,4 @@
 { config, pkgs, ... }:
 
 {
-  # GRUB in UEFI mode
-  boot.loader.grub.enable = true;
-  boot.loader.grub.efiSupport = true;
-
-  # In UEFI mode, do *not* specify /dev/nvme0n1
-  boot.loader.grub.devices = [ "nodev" ];
-
-  # (Optional) Usually for multiple OS detection
-  boot.loader.grub.useOSProber = true;
-
-  # The EFI mount point is set in the *EFI* config, not in GRUB:
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.efi.efiSysMountPoint = "/boot"; 
 }

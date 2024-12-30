@@ -33,6 +33,7 @@
           ./modules/nix-settings.nix
           ./modules/wine.nix
           ./modules/hardware-configuration.nix
+          ./modules/boot.nix
 
           # Integrate Home Manager
           home-manager.nixosModules.home-manager
