@@ -14,7 +14,4 @@
 
   # Ensure other bootloaders are disabled
   boot.loader.systemd-boot.enable = false;
-};
-
-
-
+}
