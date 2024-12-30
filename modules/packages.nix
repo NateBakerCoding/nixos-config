@@ -26,6 +26,7 @@
     lutris
     unrar
     steam
+    openvpn
   ];
   programs.steam = {
     enable = true;
