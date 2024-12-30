@@ -18,7 +18,7 @@
   # Set Theme
   boot.plymouth = {
     enable = true;
-    theme = "rings";
+    theme = "hud_3";
     themePackages = with pkgs; [
         # By default we would install all themes
         (adi1090x-plymouth-themes.override {
@@ -29,8 +29,8 @@
 
   # Enable 'Slient Boot'
   boot.consoleLogLevel = 0;
-  initrd.verbose = false;
-  kernelParams = [
+  boot.initrd.verbose = false;
+  boot.kernelParams = [
     "quiet"
     "splash"
     "boot.shell_on_fail"
@@ -42,5 +42,5 @@
   # Hide the OS choice for bootloaders.
   # It's still possible to open the bootloader list by pressed
   # It will just not appear on screen unless a key is pressed
-  loader.timeout = 0; 
+  boot.loader.timeout = 0; 
 }
