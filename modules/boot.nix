@@ -25,7 +25,7 @@
           selected_themes = [ "hud_3" ];
         })
     ];
-  }
+  };
 
   # Enable 'Slient Boot'
   boot.consoleLogLevel = 0;
