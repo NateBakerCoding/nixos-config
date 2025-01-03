@@ -2,6 +2,7 @@
 
 
 {
+    services.logind.lidSwitch = "ignore";
     
     services.ollama = {
         enable = true;
