@@ -39,5 +39,11 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+
+  # Allow insecure packaging
+  nixpkgs.config.permittedInsecurePackages = [
+    "dotnet-runtime-wrapped-6.0.36"
+  ];
+
 }
 
