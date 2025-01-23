@@ -28,7 +28,7 @@
     steam
     openvpn
     krita                       # Drawing software
-    opentabledriver             # Support for drawing tablet
+    opentabletdriver             # Support for drawing tablet
   ];
   programs.steam = {
     enable = true;
