@@ -27,7 +27,8 @@
     unrar
     steam
     openvpn
-    krita
+    krita                       # Drawing software
+    opentabledriver             # Support for drawing tablet
   ];
   programs.steam = {
     enable = true;
