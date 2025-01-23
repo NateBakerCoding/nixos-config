@@ -27,6 +27,7 @@
     unrar
     steam
     openvpn
+    krita
   ];
   programs.steam = {
     enable = true;
