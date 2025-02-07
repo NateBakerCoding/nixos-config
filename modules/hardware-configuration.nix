@@ -10,7 +10,11 @@
 
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "usbhid" "usb_storage" "sd_mod" ];
   boot.initrd.kernelModules = [ ];
-  boot.kernelModules = [ "kvm-amd" "lenovo-legion-module"];
+  boot.kernelModules = [ "kvm-amd" "lenovo-legion-module" "uinput"];
+  boot.blacklistedKernelModules = [
+    "wacom"
+    "hid_uclogic"
+  ];
   boot.extraModulePackages = with config.boot.kernelPackages; [ lenovo-legion-module ];
 
   fileSystems."/" =
