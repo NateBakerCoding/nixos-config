@@ -9,6 +9,7 @@
     ./configs/kitty-config.nix
     ./configs/bashrc-config.nix
     ./configs/nvim-config.nix
+    ./configs/tmux-config.nix # Added
   ];
   # List packages without a config associated with them here
   home.packages = with pkgs; [

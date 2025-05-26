@@ -27,7 +27,6 @@
   };
 
   # Recommended for low-latency performance
-  boot.kernelParams = [ "threadirqs" ];
   environment.variables = {
     PIPEWIRE_LATENCY = "256/48000"; # Example latency setting for low-latency audio
   };

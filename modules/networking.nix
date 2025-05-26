@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  networking.hostName = "nixos";
+  networking.hostName = "bakerdev"; # Changed from "nixos"
   networking.networkmanager.enable = true;
   networking.firewall = {
     enable = true;

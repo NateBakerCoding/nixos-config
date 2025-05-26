@@ -5,6 +5,12 @@
 
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];
+    auto-optimise-store = true; # Added
+  };
+
+  nix.gc = { # Added
+    automatic = true;
+    options = "--delete-older-than 7d";
   };
 }
 
